@@ -1,5 +1,5 @@
 import random
-
+####
 def adding_random_submarines(status_game):
     num = status_game["num_ship"]
     while num:

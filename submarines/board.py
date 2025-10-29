@@ -1,4 +1,4 @@
-
+######
 def ship_matrix(size:int,file:int=0)->list[list[int]]:
     my_matrix = []
     for i in range(size):
@@ -8,7 +8,7 @@ def ship_matrix(size:int,file:int=0)->list[list[int]]:
         my_matrix.append(line)
     return my_matrix
 
-
+#####
 def shooting_matrix(size:int,file:bool=False)->list[list[bool]]:
     my_matrix = []
     for i in range(size):
@@ -18,7 +18,7 @@ def shooting_matrix(size:int,file:bool=False)->list[list[bool]]:
         my_matrix.append(line)
     return my_matrix
 
-
+#####
 def screen_matrix(matrix_ship:list[list[int]],matrix_shooting:list[list[bool]])->list[list[str]]:
     new_matrix = []
     for i in range(len(matrix_ship)):
@@ -34,7 +34,7 @@ def screen_matrix(matrix_ship:list[list[int]],matrix_shooting:list[list[bool]])-
         new_matrix.append(new_line)
     return new_matrix
 
-
+#####
 def game_status(ship,shooting,num_ship,num_shooting):
     return {
             "ship":ship,
@@ -45,5 +45,3 @@ def game_status(ship,shooting,num_ship,num_shooting):
             "num_ship":num_ship,
             "last_ship":0
         }
-
-
